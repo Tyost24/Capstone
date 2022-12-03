@@ -1,1 +1,57 @@
-Readme for capstone
+Executive Summary
+
+For my capstone I want to compare the educational performances of high schools and how that compares to the level of athletic success they have in the sport of lacrosse. I played lacrosse in high school and college and have always wondered if there was a correlation between the two. I have a scrapable lax statistics site that can be broken down by state, division, school, and even players. I have 3 sites for education statistics that I believe are scrapable and will compile data to clean.
+
+Motivation
+
+I chose this topic of curiosity. I played lacrosse at two private school, and I also coached lacrosse for 7 years at a public school. I would love to see if there are any correlation between quality of education and how good a team is. 
+
+Data Question
+
+Does the highs schools rank within the state correlate to the success of their lacrosse team?
+How many of the top ranking schools in education are in the top 10 of best lacrosse team?
+Public vs Private in education in each state
+Do those high performing schools send more students to college on lacrosse scholarships?
+Is there a difference between men’s and woman’s lacrosse and education?
+ 
+Minimum Viable Product (MVP)
+
+I would like to create visualizations that help break down the questions I stated above. I am sure that through the process I will discover new questions and ideas that can help tell the story I am trying to portray. I would like to use some SQL, Python, and then Power Bi to put it all together. My intended audience would be any fan of lacrosse, that could range from students, parents, coaches, schools.
+
+Schedule (through )
+1.	Get the Data (11/08/22)
+2.	Clean & Explore the Data (11/22/22)
+3.	Create Presentation of your Analysis (12/06/22) I would like it to be done by then so I can then spend time making final edits and touches.
+•	Should be a presentation, but could include a Jupyter Notebook or dashboard in Excel, Tableau, or PowerBI
+4.	Internal demos (12/20/2022)
+5.	Demo Day!! (1/5/2022)
+
+
+
+Data Sources
+ 
+
+Here I found some much better sources and data for school statistics
+
+https://nces.ed.gov/ccd/tables/ACGR_RE_and_characteristics_2018-19.asp
+
+https://nces.ed.gov/ccd/elsi/
+
+ teachers:
+https://nces.ed.gov/programs/digest/d19/tables/dt19_209.10.asp
+
+cost per pupil
+https://nces.ed.gov/pubs2022/2022301.pdf
+
+
+https://www.laxnumbers.com/current-rankings/boys
+
+https://www.nea.org/sites/default/files/2022-04/2022%20Rankings%20and%20Estimates%20Report.pdf
+
+https://education-consumers.org/school-performance-tennessee/
+
+https://high-schools.com/
+
+Known Issues and Challenges
+
+My current challenge right now. Is just making sure to find reliable education statistics per high school in each state. There are many high schools and cleaning that data I believe will be a large struggle. I have also found it more of a challenge to find private school data than public school.  The lacrosse data is a lot cleaner already but will still need further cleaning. I am positive more challenges will arise as I dive deeper. 
