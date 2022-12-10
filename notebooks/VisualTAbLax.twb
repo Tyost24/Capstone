@@ -1,0 +1,863 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1108.0821                               -->
+<workbook original-version='18.1' source-build='2022.3.1 (20223.22.1108.0821)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='LRY' inline='true' name='federated.0p1h05e0q641qc17ktgqt1ho5r3k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='LRY' name='semistructpassivestore-direct.1u27zci0i7d4a311m0q9f0bexuow'>
+            <connection class='semistructpassivestore-direct' directory='/Users/tjyost/Desktop/Python/Capstone/data' filename='LRY.xlsx' password='' server=''>
+              <semistruct-schemas />
+            </connection>
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='National Ranks+ (Multiple Connections)' inline='true' name='federated.09vm3by15xeejm10rcyej0lmckl5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='LRY' name='excel-direct.1eyp1jh07fllht13po32m0bc2gto'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='/Users/tjyost/Desktop/Python/Capstone/data/LRY.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='school' name='textscan.1wudgjb0tox6la14m6eq81xe8jxz'>
+            <connection class='textscan' directory='/Users/tjyost/Desktop/Python/Capstone/data' filename='school.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1eyp1jh07fllht13po32m0bc2gto' name='National Ranks' table='[&apos;National Ranks$&apos;]' type='table'>
+          <columns gridOrigin='A1:S10001:no:A1:S10001:1' header='yes' lost='0' outcome='1' processed='149985'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='team_nbr' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='web' ordinal='3' />
+            <column datatype='string' name='logo' ordinal='4' />
+            <column datatype='integer' name='gp' ordinal='5' />
+            <column datatype='integer' name='gf' ordinal='6' />
+            <column datatype='integer' name='ga' ordinal='7' />
+            <column datatype='integer' name='wins' ordinal='8' />
+            <column datatype='integer' name='losses' ordinal='9' />
+            <column datatype='integer' name='ties' ordinal='10' />
+            <column datatype='real' name='agd' ordinal='11' />
+            <column datatype='real' name='sched' ordinal='12' />
+            <column datatype='real' name='rating' ordinal='13' />
+            <column datatype='integer' name='adj_average' ordinal='14' />
+            <column datatype='string' name='state' ordinal='15' />
+            <column datatype='integer' name='div_rank_live' ordinal='16' />
+            <column datatype='integer' name='ranking' ordinal='17' />
+            <column datatype='integer' name='Year' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1eyp1jh07fllht13po32m0bc2gto' name='National Ranks' table='[&apos;National Ranks$&apos;]' type='table'>
+            <columns gridOrigin='A1:S10001:no:A1:S10001:1' header='yes' lost='0' outcome='1' processed='149985'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='team_nbr' ordinal='1' />
+              <column datatype='string' name='name' ordinal='2' />
+              <column datatype='string' name='web' ordinal='3' />
+              <column datatype='string' name='logo' ordinal='4' />
+              <column datatype='integer' name='gp' ordinal='5' />
+              <column datatype='integer' name='gf' ordinal='6' />
+              <column datatype='integer' name='ga' ordinal='7' />
+              <column datatype='integer' name='wins' ordinal='8' />
+              <column datatype='integer' name='losses' ordinal='9' />
+              <column datatype='integer' name='ties' ordinal='10' />
+              <column datatype='real' name='agd' ordinal='11' />
+              <column datatype='real' name='sched' ordinal='12' />
+              <column datatype='real' name='rating' ordinal='13' />
+              <column datatype='integer' name='adj_average' ordinal='14' />
+              <column datatype='string' name='state' ordinal='15' />
+              <column datatype='integer' name='div_rank_live' ordinal='16' />
+              <column datatype='integer' name='ranking' ordinal='17' />
+              <column datatype='integer' name='Year' ordinal='18' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1wudgjb0tox6la14m6eq81xe8jxz' name='school.csv' table='[school#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='Overall Rank' ordinal='1' />
+              <column datatype='string' name='State' ordinal='2' />
+              <column datatype='real' name='Total Score' ordinal='3' />
+              <column datatype='integer' name='Quality' ordinal='4' />
+              <column datatype='integer' name='Safety' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (school.csv)]' value='[school.csv].[F1]' />
+          <map key='[F1]' value='[National Ranks].[F1]' />
+          <map key='[Overall Rank]' value='[school.csv].[Overall Rank]' />
+          <map key='[Quality]' value='[school.csv].[Quality]' />
+          <map key='[Safety]' value='[school.csv].[Safety]' />
+          <map key='[State]' value='[school.csv].[State]' />
+          <map key='[Total Score]' value='[school.csv].[Total Score]' />
+          <map key='[Year]' value='[National Ranks].[Year]' />
+          <map key='[adj_average]' value='[National Ranks].[adj_average]' />
+          <map key='[agd]' value='[National Ranks].[agd]' />
+          <map key='[div_rank_live]' value='[National Ranks].[div_rank_live]' />
+          <map key='[ga]' value='[National Ranks].[ga]' />
+          <map key='[gf]' value='[National Ranks].[gf]' />
+          <map key='[gp]' value='[National Ranks].[gp]' />
+          <map key='[logo]' value='[National Ranks].[logo]' />
+          <map key='[losses]' value='[National Ranks].[losses]' />
+          <map key='[name]' value='[National Ranks].[name]' />
+          <map key='[ranking]' value='[National Ranks].[ranking]' />
+          <map key='[rating]' value='[National Ranks].[rating]' />
+          <map key='[sched]' value='[National Ranks].[sched]' />
+          <map key='[state]' value='[National Ranks].[state]' />
+          <map key='[team_nbr]' value='[National Ranks].[team_nbr]' />
+          <map key='[ties]' value='[National Ranks].[ties]' />
+          <map key='[web]' value='[National Ranks].[web]' />
+          <map key='[wins]' value='[National Ranks].[wins]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:S10001:no:A1:S10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>149985</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[school.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team_nbr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[team_nbr]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>team_nbr</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>web</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[web]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>web</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[logo]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>logo</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gp]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>gp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gf]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>gf</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ga</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ga]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>ga</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wins]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>wins</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[losses]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>losses</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ties</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ties]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>ties</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[agd]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>agd</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sched</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sched]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>sched</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adj_average</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adj_average]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>adj_average</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>div_rank_live</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[div_rank_live]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>div_rank_live</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ranking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ranking]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>ranking</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (school.csv)]</local-name>
+            <parent-name>[school.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[school.csv_D991C0A1591D4E4A9B3D035A21E7A38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overall Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Overall Rank]</local-name>
+            <parent-name>[school.csv]</parent-name>
+            <remote-alias>Overall Rank</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[school.csv_D991C0A1591D4E4A9B3D035A21E7A38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[school.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[school.csv_D991C0A1591D4E4A9B3D035A21E7A38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Score]</local-name>
+            <parent-name>[school.csv]</parent-name>
+            <remote-alias>Total Score</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[school.csv_D991C0A1591D4E4A9B3D035A21E7A38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quality</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quality]</local-name>
+            <parent-name>[school.csv]</parent-name>
+            <remote-alias>Quality</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[school.csv_D991C0A1591D4E4A9B3D035A21E7A38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Safety</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Safety]</local-name>
+            <parent-name>[school.csv]</parent-name>
+            <remote-alias>Safety</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[school.csv_D991C0A1591D4E4A9B3D035A21E7A38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='State1' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='National Ranks' datatype='table' name='[__tableau_internal_object_id__].[National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='school.csv' datatype='table' name='[__tableau_internal_object_id__].[school.csv_D991C0A1591D4E4A9B3D035A21E7A38E]' role='measure' type='quantitative' />
+      <column caption='Adj Average' datatype='integer' name='[adj_average]' role='measure' type='quantitative' />
+      <column caption='Agd' datatype='real' name='[agd]' role='measure' type='quantitative' />
+      <column caption='Div Rank Live' datatype='integer' name='[div_rank_live]' role='measure' type='quantitative' />
+      <column caption='Ga' datatype='integer' name='[ga]' role='measure' type='quantitative' />
+      <column caption='Gf' datatype='integer' name='[gf]' role='measure' type='quantitative' />
+      <column caption='Gp' datatype='integer' name='[gp]' role='measure' type='quantitative' />
+      <column caption='Logo' datatype='string' name='[logo]' role='dimension' type='nominal' />
+      <column caption='Losses' datatype='integer' name='[losses]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Ranking' datatype='integer' name='[ranking]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Sched' datatype='real' name='[sched]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Team Nbr' datatype='integer' name='[team_nbr]' role='dimension' type='ordinal' />
+      <column caption='Ties' datatype='integer' name='[ties]' role='measure' type='quantitative' />
+      <column caption='Web' datatype='string' name='[web]' role='dimension' type='nominal' />
+      <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='National Ranks' id='National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60'>
+            <properties context=''>
+              <relation connection='excel-direct.1eyp1jh07fllht13po32m0bc2gto' name='National Ranks' table='[&apos;National Ranks$&apos;]' type='table'>
+                <columns gridOrigin='A1:S10001:no:A1:S10001:1' header='yes' lost='0' outcome='1' processed='149985'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='team_nbr' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='string' name='web' ordinal='3' />
+                  <column datatype='string' name='logo' ordinal='4' />
+                  <column datatype='integer' name='gp' ordinal='5' />
+                  <column datatype='integer' name='gf' ordinal='6' />
+                  <column datatype='integer' name='ga' ordinal='7' />
+                  <column datatype='integer' name='wins' ordinal='8' />
+                  <column datatype='integer' name='losses' ordinal='9' />
+                  <column datatype='integer' name='ties' ordinal='10' />
+                  <column datatype='real' name='agd' ordinal='11' />
+                  <column datatype='real' name='sched' ordinal='12' />
+                  <column datatype='real' name='rating' ordinal='13' />
+                  <column datatype='integer' name='adj_average' ordinal='14' />
+                  <column datatype='string' name='state' ordinal='15' />
+                  <column datatype='integer' name='div_rank_live' ordinal='16' />
+                  <column datatype='integer' name='ranking' ordinal='17' />
+                  <column datatype='integer' name='Year' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='school.csv' id='school.csv_D991C0A1591D4E4A9B3D035A21E7A38E'>
+            <properties context=''>
+              <relation connection='textscan.1wudgjb0tox6la14m6eq81xe8jxz' name='school.csv' table='[school#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Overall Rank' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='real' name='Total Score' ordinal='3' />
+                  <column datatype='integer' name='Quality' ordinal='4' />
+                  <column datatype='integer' name='Safety' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[state]' />
+              <expression op='[State]' />
+            </expression>
+            <first-end-point object-id='National Ranks_6EB8E50D745F43BB8AA56DD1CACFAF60' />
+            <second-end-point object-id='school.csv_D991C0A1591D4E4A9B3D035A21E7A38E' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='# teams per state'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Ranks+ (Multiple Connections)' name='federated.09vm3by15xeejm10rcyej0lmckl5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.09vm3by15xeejm10rcyej0lmckl5'>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[name]' derivation='Count' name='[cnt:name:qk]' pivot='key' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09vm3by15xeejm10rcyej0lmckl5].[none:Year:ok]'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.09vm3by15xeejm10rcyej0lmckl5].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.09vm3by15xeejm10rcyej0lmckl5].[cnt:name:qk]' />
+              <color column='[federated.09vm3by15xeejm10rcyej0lmckl5].[cnt:name:qk]' />
+              <text column='[federated.09vm3by15xeejm10rcyej0lmckl5].[none:Year:ok]' />
+              <text column='[federated.09vm3by15xeejm10rcyej0lmckl5].[none:state:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E59A2299-DCD7-406B-AC92-3C2FEB567261}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='# teams per state'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09vm3by15xeejm10rcyej0lmckl5].[cnt:name:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09vm3by15xeejm10rcyej0lmckl5].[none:Year:ok]</field>
+            <field>[federated.09vm3by15xeejm10rcyej0lmckl5].[none:Year:qk]</field>
+            <field>[federated.09vm3by15xeejm10rcyej0lmckl5].[none:name:nk]</field>
+            <field>[federated.09vm3by15xeejm10rcyej0lmckl5].[none:state:nk]</field>
+            <field>[federated.09vm3by15xeejm10rcyej0lmckl5].[sum:ranking:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8062A199-A536-4215-951B-29B472C890FC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='# teams per state' width='384'>
+      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
+      ioeCqrqeqt7n+5a+VEL5Sk1N4aDOzq3epuK6Ktc8jWXziocCylVqjXz5DXNX5wHYliXHsVSt
+      1X/NH0urVwrNlypfa1AAD456zwMI2raq3p33L0F79aqgxZorSXJsS77vy/vCXi0acFSqufJv
+      uU3AtvXCYJdG5rJfOpxkirrXAL6K5/vyal/ZjzvyJXb+AOryu3b+N7ZXb7mJ+8U9/3U3AnHr
+      bSxJh6/NarFo7v7orgIAAPersuupbPDOX+JEMAAwFgEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMR
+      AAAwFAEAAEMRAAAwFAEAAEMRAAAwFAEAAEMRAAAwVKDRAwAwTyoS1Cubexs9hvEIAIB7rlCt
+      6ePZbKPHMB4BAHDPVV1fs4VSo8cwHmsAAGAoAgAAhiIAAGAo1gAANFzIsbWnq0XxUEBHJ+YV
+      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
+      7gAc2NKrD0andGUhp4VCWQOZpNLRsHz52tWZ1kKhpGPX5hRybL28pU8/OnZBNc9fy9kBAHeh
+      7gBMrRS1saVJzw93KxJwdHJqUfsGu/TWyLhKNVexUFAvDHerqymmyZWCnh3s1FP9HWs5OwDg
+      LtS9CHx0fO627xeKZR2bmJckjcxmNTKbvbntymLuGxoPALBW+JwmABiqoQGwGvnkAGC4ugOw
+      szOtx3pbJUnRoKM/fXjjXT/5zs6MmiOhr3UfS1J7InJzjmQ4eNdzAICJ6l4DGMo0KR0L6ePx
+      OT3W26buZEwhx9aBLb1yPV9vjYxruKVJu7oyeu/SpNKxsHZ2ZvT+pUm1JSLa2ZnR4aszurqU
+      177BDkUCAZVrroZakvL81fv3puK6spjTQDqhieWC9m/q0VKxrENXZ/QHm3pVcT2dmVnU957c
+      qiNjs4oEHHU3xfTmyLjCjq0t7c06eGlSC4XyWv6fAcADoe53AL58zeZKaotH1JmManw5L2l1
+      cdixLW1rb9ZzQ5369YUJeb6vZwc79ZsLE6q6nhYKZf3L5Snt39SjHR1puZ50ZGxG0uqC8UKh
+      rIF0Ujs60nJsSzu7MtrRkVa2WNHF+WU91N2iUs1VOGArEwvrzMySfn1hQmdmlnRkfE6TywU9
+      saFdBy9OqsbJZwBQl6+1BnB4bFb7BjtVqK6eBNabiuvF4R7FQ0EFHVsHL03pla19Gso06f3r
+      X29uS+mFjd3a2ZmRbVlqjUd0fi6rxWJFnu9rYjmvfKV287pBN64tdGp6UaloUC9v6VN7PKqe
+      VEy2ZalYdVV1PZVqriq11a8L1ZoOXZ3RK9v6NJhJftP/RwDwQKo7ABXXU75S1YbmhD4Zn1Ol
+      5sm2LPnylQgF5Pu+hlualKtUlYwEtbGlSflKVYlwUJZlKRJwJEknphb0+vYNen37BtU8T74v
+      uZ6nqusqEwvrtW39agqH1JOKy7ZshQOOTk4vKBUJy7Et5StVVV1PL2/p1UKxrMd6W7W5LaWB
+      TFLFSk2xEGsCAFAPy/f9rzxd93/89oz+98fnfu8DhBz75jV/LK0uzBaqrixJkaCj4vV3C0HH
+      VvXG7SzJliX3C09tW1LA/vzxIgFHVdeT6/uyLcmyLLnXzy6+8XiObWn1YXyFA58/H4D163tP
+      bdNPzlxp9BjGu+u/+n7rBd986ebhIV+6bWdcvfV2vuTqy93x/Nsfr1Rzb9umW4Jx4/HcWy43
+      wc4fAOrHiWAAYCgCAACGIgAAYCgCAACGIgAAYCgCAACGIgAAYCgCAACGIgAAYCgCAACGIgAA
+      YCgCAACGIgAAYCgCAACGIgAAYCgCAACG+v+InTi6rOuHfgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
