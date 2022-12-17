@@ -1,0 +1,1301 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1108.0821                               -->
+<workbook original-version='18.1' source-build='2022.3.1 (20223.22.1108.0821)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='National Ranks+ (LRY)' inline='true' name='federated.1fv4i1t12ujqy8119ldt60qxr45m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='LRY' name='excel-direct.0m1ii7b0x8pf7x19ad2tx1yoqv7q'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/tjyost/Desktop/Python/Capstone/data/LRY.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0m1ii7b0x8pf7x19ad2tx1yoqv7q' name='National Ranks' table='[&apos;National Ranks$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q10001:no:A1:Q10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='team_nbr' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='integer' name='gp' ordinal='3' />
+            <column datatype='integer' name='gf' ordinal='4' />
+            <column datatype='integer' name='ga' ordinal='5' />
+            <column datatype='integer' name='wins' ordinal='6' />
+            <column datatype='integer' name='losses' ordinal='7' />
+            <column datatype='integer' name='ties' ordinal='8' />
+            <column datatype='real' name='agd' ordinal='9' />
+            <column datatype='real' name='sched' ordinal='10' />
+            <column datatype='real' name='rating' ordinal='11' />
+            <column datatype='integer' name='adj_average' ordinal='12' />
+            <column datatype='string' name='state' ordinal='13' />
+            <column datatype='integer' name='div_rank_live' ordinal='14' />
+            <column datatype='integer' name='ranking' ordinal='15' />
+            <column datatype='integer' name='Year' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0m1ii7b0x8pf7x19ad2tx1yoqv7q' name='National Ranks' table='[&apos;National Ranks$&apos;]' type='table'>
+            <columns gridOrigin='A1:Q10001:no:A1:Q10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='team_nbr' ordinal='1' />
+              <column datatype='string' name='name' ordinal='2' />
+              <column datatype='integer' name='gp' ordinal='3' />
+              <column datatype='integer' name='gf' ordinal='4' />
+              <column datatype='integer' name='ga' ordinal='5' />
+              <column datatype='integer' name='wins' ordinal='6' />
+              <column datatype='integer' name='losses' ordinal='7' />
+              <column datatype='integer' name='ties' ordinal='8' />
+              <column datatype='real' name='agd' ordinal='9' />
+              <column datatype='real' name='sched' ordinal='10' />
+              <column datatype='real' name='rating' ordinal='11' />
+              <column datatype='integer' name='adj_average' ordinal='12' />
+              <column datatype='string' name='state' ordinal='13' />
+              <column datatype='integer' name='div_rank_live' ordinal='14' />
+              <column datatype='integer' name='ranking' ordinal='15' />
+              <column datatype='integer' name='Year' ordinal='16' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0m1ii7b0x8pf7x19ad2tx1yoqv7q' name='nat avg lax list' table='[&apos;nat avg lax list$&apos;]' type='table'>
+            <columns gridOrigin='A1:C47:no:A1:C47:0' header='yes' outcome='6'>
+              <column datatype='string' name='state' ordinal='0' />
+              <column datatype='real' name='top 3 lax nat avg' ordinal='1' />
+              <column datatype='real' name='state avg team rank' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0m1ii7b0x8pf7x19ad2tx1yoqv7q' name='top 3 per State' table='[&apos;top 3 per State$&apos;]' type='table'>
+            <columns gridOrigin='A1:W138:no:A1:W138:0' header='yes' outcome='6'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='team_nbr' ordinal='1' />
+              <column datatype='string' name='name' ordinal='2' />
+              <column datatype='integer' name='gp' ordinal='3' />
+              <column datatype='integer' name='gf' ordinal='4' />
+              <column datatype='integer' name='ga' ordinal='5' />
+              <column datatype='integer' name='wins' ordinal='6' />
+              <column datatype='integer' name='losses' ordinal='7' />
+              <column datatype='integer' name='ties' ordinal='8' />
+              <column datatype='real' name='agd' ordinal='9' />
+              <column datatype='real' name='sched' ordinal='10' />
+              <column datatype='real' name='rating' ordinal='11' />
+              <column datatype='real' name='adj_average' ordinal='12' />
+              <column datatype='string' name='state' ordinal='13' />
+              <column datatype='integer' name='div_rank_live' ordinal='14' />
+              <column datatype='integer' name='ranking' ordinal='15' />
+              <column datatype='integer' name='Year' ordinal='16' />
+              <column datatype='integer' name='state Rank' ordinal='17' />
+              <column datatype='integer' name='Public edu nat rank' ordinal='18' />
+              <column datatype='integer' name='Public edu state rank' ordinal='19' />
+              <column datatype='integer' name='Private edu nat rank' ordinal='20' />
+              <column datatype='integer' name='Private edu state rank' ordinal='21' />
+              <column datatype='string' name='Public Or Private' ordinal='22' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (top 3 per State)]' value='[top 3 per State].[F1]' />
+          <map key='[F1]' value='[National Ranks].[F1]' />
+          <map key='[Private edu nat rank]' value='[top 3 per State].[Private edu nat rank]' />
+          <map key='[Private edu state rank]' value='[top 3 per State].[Private edu state rank]' />
+          <map key='[Public Or Private]' value='[top 3 per State].[Public Or Private]' />
+          <map key='[Public edu nat rank]' value='[top 3 per State].[Public edu nat rank]' />
+          <map key='[Public edu state rank]' value='[top 3 per State].[Public edu state rank]' />
+          <map key='[Year (top 3 per State)]' value='[top 3 per State].[Year]' />
+          <map key='[Year]' value='[National Ranks].[Year]' />
+          <map key='[adj_average (top 3 per State)]' value='[top 3 per State].[adj_average]' />
+          <map key='[adj_average]' value='[National Ranks].[adj_average]' />
+          <map key='[agd (top 3 per State)]' value='[top 3 per State].[agd]' />
+          <map key='[agd]' value='[National Ranks].[agd]' />
+          <map key='[div_rank_live (top 3 per State)]' value='[top 3 per State].[div_rank_live]' />
+          <map key='[div_rank_live]' value='[National Ranks].[div_rank_live]' />
+          <map key='[ga (top 3 per State)]' value='[top 3 per State].[ga]' />
+          <map key='[ga]' value='[National Ranks].[ga]' />
+          <map key='[gf (top 3 per State)]' value='[top 3 per State].[gf]' />
+          <map key='[gf]' value='[National Ranks].[gf]' />
+          <map key='[gp (top 3 per State)]' value='[top 3 per State].[gp]' />
+          <map key='[gp]' value='[National Ranks].[gp]' />
+          <map key='[losses (top 3 per State)]' value='[top 3 per State].[losses]' />
+          <map key='[losses]' value='[National Ranks].[losses]' />
+          <map key='[name (top 3 per State)]' value='[top 3 per State].[name]' />
+          <map key='[name]' value='[National Ranks].[name]' />
+          <map key='[ranking (top 3 per State)]' value='[top 3 per State].[ranking]' />
+          <map key='[ranking]' value='[National Ranks].[ranking]' />
+          <map key='[rating (top 3 per State)]' value='[top 3 per State].[rating]' />
+          <map key='[rating]' value='[National Ranks].[rating]' />
+          <map key='[sched (top 3 per State)]' value='[top 3 per State].[sched]' />
+          <map key='[sched]' value='[National Ranks].[sched]' />
+          <map key='[state (nat avg lax list)]' value='[nat avg lax list].[state]' />
+          <map key='[state (top 3 per State)]' value='[top 3 per State].[state]' />
+          <map key='[state Rank]' value='[top 3 per State].[state Rank]' />
+          <map key='[state avg team rank]' value='[nat avg lax list].[state avg team rank]' />
+          <map key='[state]' value='[National Ranks].[state]' />
+          <map key='[team_nbr (top 3 per State)]' value='[top 3 per State].[team_nbr]' />
+          <map key='[team_nbr]' value='[National Ranks].[team_nbr]' />
+          <map key='[ties (top 3 per State)]' value='[top 3 per State].[ties]' />
+          <map key='[ties]' value='[National Ranks].[ties]' />
+          <map key='[top 3 lax nat avg]' value='[nat avg lax list].[top 3 lax nat avg]' />
+          <map key='[wins (top 3 per State)]' value='[top 3 per State].[wins]' />
+          <map key='[wins]' value='[National Ranks].[wins]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q10001:no:A1:Q10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nat avg lax list]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C47:no:A1:C47:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W138:no:A1:W138:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team_nbr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[team_nbr]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>team_nbr</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gp]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>gp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gf]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>gf</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ga</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ga]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>ga</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wins]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>wins</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[losses]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>losses</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ties</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ties]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>ties</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[agd]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>agd</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sched</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sched]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>sched</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adj_average</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adj_average]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>adj_average</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>div_rank_live</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[div_rank_live]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>div_rank_live</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ranking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ranking]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>ranking</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[National Ranks]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[National Ranks_D4F9060A760B407089956A70F1F1DBA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state (nat avg lax list)]</local-name>
+            <parent-name>[nat avg lax list]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nat avg lax list_FFAC8F9A5D74428E8DAEBE40B12BEE47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>top 3 lax nat avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[top 3 lax nat avg]</local-name>
+            <parent-name>[nat avg lax list]</parent-name>
+            <remote-alias>top 3 lax nat avg</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nat avg lax list_FFAC8F9A5D74428E8DAEBE40B12BEE47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state avg team rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[state avg team rank]</local-name>
+            <parent-name>[nat avg lax list]</parent-name>
+            <remote-alias>state avg team rank</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nat avg lax list_FFAC8F9A5D74428E8DAEBE40B12BEE47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team_nbr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[team_nbr (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>team_nbr</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gp (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>gp</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gf (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>gf</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ga</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ga (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>ga</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wins (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>wins</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[losses (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>losses</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ties</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ties (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>ties</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[agd (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>agd</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sched</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sched (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>sched</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adj_average</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[adj_average (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>adj_average</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>div_rank_live</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[div_rank_live (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>div_rank_live</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ranking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ranking (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>ranking</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (top 3 per State)]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state Rank]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>state Rank</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Public edu nat rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Public edu nat rank]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>Public edu nat rank</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Public edu state rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Public edu state rank]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>Public edu state rank</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Private edu nat rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Private edu nat rank]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>Private edu nat rank</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Private edu state rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Private edu state rank]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>Private edu state rank</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Public Or Private</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Public Or Private]</local-name>
+            <parent-name>[top 3 per State]</parent-name>
+            <remote-alias>Public Or Private</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Year (top 3 per State)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='National Ranks' datatype='table' name='[__tableau_internal_object_id__].[National Ranks_D4F9060A760B407089956A70F1F1DBA0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='nat avg lax list' datatype='table' name='[__tableau_internal_object_id__].[nat avg lax list_FFAC8F9A5D74428E8DAEBE40B12BEE47]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='top 3 per State' datatype='table' name='[__tableau_internal_object_id__].[top 3 per State_7A39AA41520646D6BE7E340144CE0A05]' role='measure' type='quantitative' />
+      <column caption='adj average (top 3 per State)' datatype='real' name='[adj_average (top 3 per State)]' role='measure' type='quantitative' />
+      <column caption='Adj Average' datatype='integer' name='[adj_average]' role='measure' type='quantitative' />
+      <column caption='Agd' datatype='real' name='[agd]' role='measure' type='quantitative' />
+      <column caption='div rank live (top 3 per State)' datatype='integer' name='[div_rank_live (top 3 per State)]' role='measure' type='quantitative' />
+      <column caption='Div Rank Live' datatype='integer' name='[div_rank_live]' role='measure' type='quantitative' />
+      <column caption='Ga' datatype='integer' name='[ga]' role='measure' type='quantitative' />
+      <column caption='Gf' datatype='integer' name='[gf]' role='measure' type='quantitative' />
+      <column caption='Gp' datatype='integer' name='[gp]' role='measure' type='quantitative' />
+      <column caption='Losses' datatype='integer' name='[losses]' role='measure' type='quantitative' />
+      <column datatype='string' name='[name (top 3 per State)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Ranking' datatype='integer' name='[ranking]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Sched' datatype='real' name='[sched]' role='measure' type='quantitative' />
+      <column caption='State (Nat Avg Lax List)' datatype='string' name='[state (nat avg lax list)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[state (top 3 per State)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Avg Team Rank' datatype='real' name='[state avg team rank]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='team nbr (top 3 per State)' datatype='integer' name='[team_nbr (top 3 per State)]' role='dimension' type='ordinal' />
+      <column caption='Team Nbr' datatype='integer' name='[team_nbr]' role='dimension' type='ordinal' />
+      <column caption='Ties' datatype='integer' name='[ties]' role='measure' type='quantitative' />
+      <column caption='Top 3 Lax Nat Avg' datatype='real' name='[top 3 lax nat avg]' role='measure' type='quantitative' />
+      <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+      <column-instance column='[state avg team rank]' derivation='Sum' name='[sum:state avg team rank:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[top 3 lax nat avg]' derivation='Sum' name='[sum:top 3 lax nat avg:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1fv4i1t12ujqy8119ldt60qxr45m].[sum:top 3 lax nat avg:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1fv4i1t12ujqy8119ldt60qxr45m].[sum:state avg team rank:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1fv4i1t12ujqy8119ldt60qxr45m]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='National Ranks' id='National Ranks_D4F9060A760B407089956A70F1F1DBA0'>
+            <properties context=''>
+              <relation connection='excel-direct.0m1ii7b0x8pf7x19ad2tx1yoqv7q' name='National Ranks' table='[&apos;National Ranks$&apos;]' type='table'>
+                <columns gridOrigin='A1:Q10001:no:A1:Q10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='team_nbr' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='integer' name='gp' ordinal='3' />
+                  <column datatype='integer' name='gf' ordinal='4' />
+                  <column datatype='integer' name='ga' ordinal='5' />
+                  <column datatype='integer' name='wins' ordinal='6' />
+                  <column datatype='integer' name='losses' ordinal='7' />
+                  <column datatype='integer' name='ties' ordinal='8' />
+                  <column datatype='real' name='agd' ordinal='9' />
+                  <column datatype='real' name='sched' ordinal='10' />
+                  <column datatype='real' name='rating' ordinal='11' />
+                  <column datatype='integer' name='adj_average' ordinal='12' />
+                  <column datatype='string' name='state' ordinal='13' />
+                  <column datatype='integer' name='div_rank_live' ordinal='14' />
+                  <column datatype='integer' name='ranking' ordinal='15' />
+                  <column datatype='integer' name='Year' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='nat avg lax list' id='nat avg lax list_FFAC8F9A5D74428E8DAEBE40B12BEE47'>
+            <properties context=''>
+              <relation connection='excel-direct.0m1ii7b0x8pf7x19ad2tx1yoqv7q' name='nat avg lax list' table='[&apos;nat avg lax list$&apos;]' type='table'>
+                <columns gridOrigin='A1:C47:no:A1:C47:0' header='yes' outcome='6'>
+                  <column datatype='string' name='state' ordinal='0' />
+                  <column datatype='real' name='top 3 lax nat avg' ordinal='1' />
+                  <column datatype='real' name='state avg team rank' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='top 3 per State' id='top 3 per State_7A39AA41520646D6BE7E340144CE0A05'>
+            <properties context=''>
+              <relation connection='excel-direct.0m1ii7b0x8pf7x19ad2tx1yoqv7q' name='top 3 per State' table='[&apos;top 3 per State$&apos;]' type='table'>
+                <columns gridOrigin='A1:W138:no:A1:W138:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='team_nbr' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='integer' name='gp' ordinal='3' />
+                  <column datatype='integer' name='gf' ordinal='4' />
+                  <column datatype='integer' name='ga' ordinal='5' />
+                  <column datatype='integer' name='wins' ordinal='6' />
+                  <column datatype='integer' name='losses' ordinal='7' />
+                  <column datatype='integer' name='ties' ordinal='8' />
+                  <column datatype='real' name='agd' ordinal='9' />
+                  <column datatype='real' name='sched' ordinal='10' />
+                  <column datatype='real' name='rating' ordinal='11' />
+                  <column datatype='real' name='adj_average' ordinal='12' />
+                  <column datatype='string' name='state' ordinal='13' />
+                  <column datatype='integer' name='div_rank_live' ordinal='14' />
+                  <column datatype='integer' name='ranking' ordinal='15' />
+                  <column datatype='integer' name='Year' ordinal='16' />
+                  <column datatype='integer' name='state Rank' ordinal='17' />
+                  <column datatype='integer' name='Public edu nat rank' ordinal='18' />
+                  <column datatype='integer' name='Public edu state rank' ordinal='19' />
+                  <column datatype='integer' name='Private edu nat rank' ordinal='20' />
+                  <column datatype='integer' name='Private edu state rank' ordinal='21' />
+                  <column datatype='string' name='Public Or Private' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[state]' />
+              <expression op='[state (nat avg lax list)]' />
+            </expression>
+            <first-end-point object-id='National Ranks_D4F9060A760B407089956A70F1F1DBA0' />
+            <second-end-point object-id='nat avg lax list_FFAC8F9A5D74428E8DAEBE40B12BEE47' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[name]' />
+              <expression op='[name (top 3 per State)]' />
+            </expression>
+            <first-end-point object-id='National Ranks_D4F9060A760B407089956A70F1F1DBA0' />
+            <second-end-point object-id='top 3 per State_7A39AA41520646D6BE7E340144CE0A05' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='National Ranks+ (LRY)' name='federated.1fv4i1t12ujqy8119ldt60qxr45m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fv4i1t12ujqy8119ldt60qxr45m'>
+            <column caption='Adj Average' datatype='integer' name='[adj_average]' role='measure' type='quantitative' />
+            <column-instance column='[state (nat avg lax list)]' derivation='None' name='[none:state (nat avg lax list):nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State (Nat Avg Lax List)' datatype='string' name='[state (nat avg lax list)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='State Avg Team Rank' datatype='real' name='[state avg team rank]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[state avg team rank]' derivation='Sum' name='[sum:state avg team rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[top 3 lax nat avg]' derivation='Sum' name='[sum:top 3 lax nat avg:qk]' pivot='key' type='quantitative' />
+            <column caption='Top 3 Lax Nat Avg' datatype='real' name='[top 3 lax nat avg]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fv4i1t12ujqy8119ldt60qxr45m].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fv4i1t12ujqy8119ldt60qxr45m].[sum:state avg team rank:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fv4i1t12ujqy8119ldt60qxr45m].[sum:top 3 lax nat avg:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1fv4i1t12ujqy8119ldt60qxr45m].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1fv4i1t12ujqy8119ldt60qxr45m].[sum:state avg team rank:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1fv4i1t12ujqy8119ldt60qxr45m].[sum:top 3 lax nat avg:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1fv4i1t12ujqy8119ldt60qxr45m].[none:state:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([adj_average])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:state:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:state:nk]' member='&quot;British Columbia&quot;' />
+                    <groupfilter function='member' level='[none:state:nk]' member='&quot;Hawaii&quot;' />
+                    <groupfilter function='member' level='[none:state:nk]' member='&quot;Manitoba&quot;' />
+                    <groupfilter function='member' level='[none:state:nk]' member='&quot;New Mexico&quot;' />
+                    <groupfilter function='member' level='[none:state:nk]' member='&quot;North Dakota&quot;' />
+                    <groupfilter function='member' level='[none:state:nk]' member='&quot;Ontario&quot;' />
+                    <groupfilter function='member' level='[none:state:nk]' member='&quot;Quebec&quot;' />
+                    <groupfilter function='member' level='[none:state:nk]' member='&quot;South Dakota&quot;' />
+                    <groupfilter function='member' level='[none:state:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[none:state:nk]</column>
+            <column>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1fv4i1t12ujqy8119ldt60qxr45m].[none:state (nat avg lax list):nk]' value='37' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='312' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fv4i1t12ujqy8119ldt60qxr45m].[:Measure Names]' />
+              <lod column='[federated.1fv4i1t12ujqy8119ldt60qxr45m].[sum:top 3 lax nat avg:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[Multiple Values]</rows>
+        <cols>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[none:state (nat avg lax list):nk]</cols>
+      </table>
+      <simple-id uuid='{48D6956D-B298-44BF-A1B9-09E866236751}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0EB87059-6091-42DC-A79A-1EEB3FCA88F5}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+          <strip size='100'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1fv4i1t12ujqy8119ldt60qxr45m].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[:Measure Names]</field>
+            <field>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[none:state (nat avg lax list):nk]</field>
+            <field>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[none:state:nk]</field>
+            <field>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[none:top 3 lax nat avg:qk]</field>
+            <field>[federated.1fv4i1t12ujqy8119ldt60qxr45m].[sum:state avg team rank:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C64EFB65-CDBA-408F-BA33-5C7F064CF8FE}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D6A82F5-BEF8-476D-8CFE-D143F2A476D6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAARnklEQVR4nO3d309U577H8c+ateYHisggSGsLiuDWtkiP7sRSuncVmzZGvTqnF709N/0n
+      +p+ci942TZqYekGa1MgO9XfVlhY3HHqYUwE3RREVZ5g1zMx6zkVTjvY0OdPuNQz6fb+uYMZZ
+      fCFm3vM8a1bGc845AQDMSTR6AABAYxAAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgC
+      AABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAA
+      YBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABG
+      EQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQB
+      AACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAA
+      MIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACj
+      CAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoA
+      AIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAA
+      GEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBR
+      BAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUA
+      AMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAA
+      jCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAo
+      AgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIA
+      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
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
